@@ -1,0 +1,15 @@
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\bin\Debug\Windows Explorer Toggle.exe.config
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\bin\Debug\Windows Explorer Toggle.exe
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\bin\Debug\Windows Explorer Toggle.pdb
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle.csprojAssemblyReference.cache
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\MainWindow.g.cs
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\App.g.cs
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle_MarkupCompile.cache
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle_MarkupCompile.lref
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\MainWindow.baml
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle.g.resources
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows_Explorer_Toggle.Properties.Resources.resources
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle.csproj.GenerateResource.cache
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle.csproj.CoreCompileInputs.cache
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle.exe
+C:\Users\Luciano Brumer\Documents\Programacion\CS\Windows Explorer Toggle\obj\Debug\Windows Explorer Toggle.pdb

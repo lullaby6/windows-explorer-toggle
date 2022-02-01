@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap');
+
+html {
+	font-family: 'Noto Sans', system-ui;
+    scroll-behavior: smooth;
+}
+
+.main{
+}
+
+.bg {
+	animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #eee 50%, #09f 50%);
+	position: fixed;
+    bottom: 0;
+	top: 0;
+    z-index: -1;
+    opacity: .5;
+	left: -50%;
+    right: -50%;
+}
+
+.bg2 {
+    animation: slide 4s ease-in-out infinite alternate;
+}
+
+.bg3 {
+    animation: slide 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	padding: 5% 0 5% 0;
+}
+
+.content-background {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	min-height: 90%;
+	background: #5555;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 50px;
+	gap: 100px;
+}
+
+.logo {
+	height: 250px;
+}
+
+.download-div{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.download-button {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 15px 10px 15px;
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	border-radius: 5px;
+	font-size: 25px;
+	outline: none;
+	transition: color 1s, background 1s, outline 1s;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.download-button:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(204,203,215,1) 100%, rgba(221,221,221,1) 100%);	
+    transition: width 1s;
+}
+
+.download-button:hover::before {
+    width: 100%;
+}
+
+.download-button:hover > span{
+	color: #555;
+}
+
+.download-button:hover {
+	animation: shake 1s infinite 1s;
+}
+
+@keyframes shake {
+  0% {left: 0}
+  10% {left: -3px}
+  20% {left: 5px}
+  30% {left: -5px}
+  40% {left: 5px}
+  50% {left: -5px}
+  60% {left: 3px}
+  100% {left: 0}
+}
+
+span {
+	z-index: 2;
+	position: relative;
+	transition: color 1s;
+}
+
+.slogan {
+	text-align: center;
+	color: #444;
+	font-size: 20px;
+	margin: 0px;
+	display: inline;
+}
+
+.how-works{
+	width: 90%;
+	background: #5555;
+	padding: 10px 0 25px 0;
+	border-radius: 5px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	gap: 10px;
+}
+
+.how-works__title{
+	text-align: center;
+	font-size: 50px;
+	color: #eee;
+	font-weight: 600;
+	width: 90%;
+}
+
+.how-works__content{
+	font-size: 15px;
+	color: #eee;
+	width: 60%;
+	line-height: 1.25;
+}
+
+@media screen and (max-width: 500px){
+	.content-background{
+		gap: 50px;
+	}
+	.logo{
+		transform: scale(.8);
+	}
+}
