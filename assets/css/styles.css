@@ -5,110 +5,125 @@ html {
     scroll-behavior: smooth;
 }
 
-.main{
-}
-
-.bg {
-	animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #eee 50%, #09f 50%);
-	position: fixed;
-    bottom: 0;
+header{
+	position: absolute;
 	top: 0;
-    z-index: -1;
-    opacity: .5;
-	left: -50%;
-    right: -50%;
+	width: 100%;
+
+	color: #ddd;
+	font-weight: 500;
+	font-size: 17.25px;
+	
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+	gap: 25px;
+	
+	padding: 15px 50px 15px 0;
+	
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, rgb(0, 0, 0, .1), transparent);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, rgb(0, 0, 0, .1), transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bg2 {
-    animation: slide 4s ease-in-out infinite alternate;
+header a{
+	position: relative;
+	cursor: pointer;
 }
 
-.bg3 {
-    animation: slide 5s ease-in-out infinite alternate-reverse;
+header a:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+	background: #ddd;
+    transition: width 1s;
+	border-radius: 5px;
 }
 
-@keyframes slide {
-    0% {
-        transform:translateX(-25%);
-    }
-    100% {
-        transform:translateX(25%);
-    }
+header a:hover::before {
+    width: 99%;
 }
 
-.content {
+.bg-image{
+	background-image: url('../img/bg.jpg');
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.download {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	min-height: 100vh;
-	padding: 5% 0 5% 0;
+	width: 100%;
+	height: 95%;
+	gap: 200px;
+	
+	
+	
+	background: #FEAC5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgb(75, 192, 200, .75), rgb(199, 121, 208, .75)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 800% 800%;
+
+    -webkit-animation: bg-animation 25s ease infinite;
+    -moz-animation: bg-animation 25s ease infinite;
+    -o-animation: bg-animation 25s ease infinite;
+    animation: bg-animation 25s ease infinite;
 }
 
-.content-background {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 90%;
-	min-height: 90%;
-	background: #5555;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	padding: 50px;
-	gap: 100px;
+@-webkit-keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
 }
 
 .logo {
-	height: 250px;
+	height: 212.5px;
 }
 
-.download-div{
+.download-button-flex{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
 .download-button {
-	text-decoration: none;
-	color: #fff;
 	padding: 10px 15px 10px 15px;
-	background: #000000;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	border-radius: 5px;
-	font-size: 25px;
-	outline: none;
-	transition: color 1s, background 1s, outline 1s;
+	border-radius: 2.5px;
+	
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 800;
 	text-align: center;
+	
 	position: relative;
-	overflow: hidden;
-}
-
-.download-button:before {
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-	background: rgb(255,255,255);
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(204,203,215,1) 100%, rgba(221,221,221,1) 100%);	
-    transition: width 1s;
-}
-
-.download-button:hover::before {
-    width: 100%;
-}
-
-.download-button:hover > span{
-	color: #555;
+	mix-blend-mode: screen;
+	background: #fff;
 }
 
 .download-button:hover {
-	animation: shake 1s infinite 1s;
+	animation: shake 1s infinite;
 }
 
 @keyframes shake {
@@ -129,44 +144,16 @@ span {
 }
 
 .slogan {
-	text-align: center;
-	color: #444;
-	font-size: 20px;
-	margin: 0px;
-	display: inline;
+	color: #ddd;
+	font-size: 17.5px;
 }
 
-.how-works{
-	width: 90%;
-	background: #5555;
-	padding: 10px 0 25px 0;
-	border-radius: 5px;
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	gap: 10px;
-}
-
-.how-works__title{
-	text-align: center;
-	font-size: 50px;
-	color: #eee;
-	font-weight: 600;
-	width: 90%;
-}
-
-.how-works__content{
-	font-size: 15px;
-	color: #eee;
-	width: 60%;
-	line-height: 1.25;
+.wave{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }
 
 @media screen and (max-width: 500px){
-	.content-background{
-		gap: 50px;
-	}
-	.logo{
-		transform: scale(.8);
-	}
+
 }
