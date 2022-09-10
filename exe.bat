@@ -1,0 +1,1 @@
+pyinstaller -w -F --onefile --icon="icon.ico" --upx-dir=upx-3.96-win64 main.min.pyw 
