@@ -58,7 +58,8 @@ main img {
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
-	background-color: bisque;
+	background-color: #ffe4c4;
+	box-shadow: 0px 2.5px 2.5px 0px rgba(182, 163, 139, .375);
 	padding: 10px 20px;
 	display: flex;
 	gap: 5px;
@@ -91,9 +92,10 @@ footer {
 .card-container{
 	color: rgb(48, 48, 48);
 	background-color: rgb(238, 238, 238);
+	box-shadow: 0px 2.5px 2.5px 0px rgb(48, 48, 48, .25);
 	padding: 25px 25px;
 	display: flex;
-	gap: 7.5px;
+	gap: 10px;
 	flex-direction: column;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -107,6 +109,7 @@ footer {
 .card-container h1{
 	margin: 0;
 	font-size: 22.5px;
+	line-height: 27.5px;
 }
 
 .card-container p{
