@@ -192,6 +192,7 @@ footer {
 		/* padding: 25px 25px; */
 		gap: 20px;
 		flex-wrap: nowrap;
+		padding-bottom: 25px;
 	}
 	.card{
 		width: 100%;
