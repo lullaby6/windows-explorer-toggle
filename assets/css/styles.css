@@ -121,6 +121,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px){
+	.hero{
+		justify-content: center;
+		gap: 7.5%;
+	}
+
 	footer {
 		flex-wrap: wrap;
 		gap: 0
@@ -197,9 +202,6 @@ footer {
 }
 
 @media screen and (max-width: 640px){
-	main{
-		/* margin-top: 400px; */
-	}
 	.buttons{
 		flex-direction: column;
 	}
