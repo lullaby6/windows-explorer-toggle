@@ -5,6 +5,7 @@ html {
 .hero {
 	display: flex;
 	/* height: 100%; */
+	min-height: 100vh;
 	flex-direction: column;
 	justify-content: space-evenly;
 	padding: 0 7.5%;
