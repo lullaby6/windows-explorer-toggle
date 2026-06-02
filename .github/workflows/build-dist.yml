@@ -25,6 +25,9 @@ jobs:
           node-version: 22
           cache: 'npm'
 
+      - name: Clean npm cache
+        run: npm cache clean --force
+
       - name: Install dependencies
         run: npm ci
 
@@ -32,6 +35,7 @@ jobs:
         run: npm run build
         env:
           PUBLIC_BASE: /windows-explorer-toggle/
+          VITE_BASE: /windows-explorer-toggle/
 
       - name: Deploy dist branch
         uses: peaceiris/actions-gh-pages@v4
