@@ -1,0 +1,48 @@
+---
+import "@/styles/global.css";
+
+import Hero from "@/components/Hero.astro";
+import Cards from "@/components/Cards.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Windows Explorer Toggle</title>
+
+		<meta
+			name="description"
+			content="A windows desktop app to disable Windows Explorer to reduce RAM usage."
+		/>
+		<meta
+			name="keywords"
+			content="windows, explorer, toggle, disable, ram, performance, desktop, app, c#, python, github, lullaby6, windows explorer toggle, windows explorer, toggle windows explorer, disable windows explorer, windows performance, reduce ram usage, desktop app for windows"
+		/>
+		<meta name="author" content="lullaby6" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
+		<link
+			rel="canonical"
+			href="https://lullaby6.github.io/windows-explorer-toggle/"
+		/>
+		<meta name="theme-color" content="#E5E5E4" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body
+		class="inter-500 overflow-x-hidden w-screen min-h-screen md:h-screen bg-neutral-200 text-neutral-900 animate-fadein">
+		<main
+			class="bgg-red-400 h-full w-full flex flex-col gap-4 md:gap-0 justify-center items-center px-4 py-4 md:px-16 md:py-24 2xl:px-32 2xl:py-32">
+			<Hero />
+			<Cards />
+		</main>
+	</body>
+</html>

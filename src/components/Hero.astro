@@ -1,0 +1,52 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div
+	class="w-full h-1/2 bgg-red-500 flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center">
+	<div class="md:w-1/2 h-full bgg-blue-400 flex justify-start items-center">
+		<div class="flex flex-col gap-4">
+			<div class="flex flex-col md:gap-1">
+				<h1
+					class="font-bold text-3xl md:text-5xl 2xl:text-6xl text-balance">
+					Windows Explorer Toggle
+				</h1>
+				<p class="text-pretty md:text-xl text-neutral-800">
+					Disable Windows Explorer to reduce RAM usage!
+				</p>
+			</div>
+
+			<div class="flex flex-col md:flex-row gap-2">
+				<a
+					href="https://github.com/lullaby6/windows-explorer-toggle/releases/download/v1.0.0/Windows.Explorer.Toggle.exe"
+					target="_blank">
+					<button
+						class="w-full md:w-auto shadow rounded pl-7 pr-8 py-2 bg-orange-100 cursor-pointer hover:bg-orange-200 flex justify-center md:justify-start items-center gap-1">
+						<Icon name="tabler:download" class="text-lg" />
+						Download
+					</button>
+				</a>
+				<a
+					href="https://github.com/lullaby6/windows-explorer-toggle"
+					target="_blank">
+					<button
+						class="w-full md:w-auto shadow rounded pl-7 pr-8 py-2 bg-orange-100 cursor-pointer hover:bg-orange-200 flex justify-center md:justify-start items-center gap-1">
+						<Icon name="tabler:brand-github" class="text-lg" />
+						Github
+					</button>
+				</a>
+				<a href="https://ko-fi.com/lullaby45743" target="_blank">
+					<button
+						class="w-full md:w-auto shadow rounded pl-7 pr-8 py-2 bg-orange-100 cursor-pointer hover:bg-orange-200 flex justify-center md:justify-start items-center gap-1">
+						<Icon name="tabler:heart" class="text-lg" />
+						Donate
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="md:w-1/2 h-full bgg-blue-500 flex justify-center items-center">
+		<img src="/logo.svg" class="w-40 md:w-80" />
+	</div>
+</div>
