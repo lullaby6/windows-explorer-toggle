@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --breakpoint-3xl: 1600px;
-
     --animate-fadein: fadein 0.9s ease-in-out forwards;
 
     @keyframes fadein {
